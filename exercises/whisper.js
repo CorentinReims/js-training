@@ -7,9 +7,14 @@
  *
  */
 
+function yell(str){
+    return '*' + str.toLowerCase() + '*'
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.deepEqual(yell('HELLO'), '*hello*')
+assert.deepEqual(yell('COUCOU'), '*coucou*')
+assert.deepEqual(yell('BONJOUR'), '*bonjour*')
 // End of tests */

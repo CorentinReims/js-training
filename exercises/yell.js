@@ -7,8 +7,14 @@
  */
 
 
+function yell(n){
+    return n.toUpperCase()
+}
+
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.deepEqual(yell('hello'), 'HELLO')
+assert.deepEqual(yell('coucou'), 'COUCOU')
+assert.deepEqual(yell('Bonjour'), 'BONJOUR')
 // End of tests */

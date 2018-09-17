@@ -12,9 +12,22 @@
  *
  */
 
+ const keepFirst = str => {
+     return str.slice(0,2)
+ }
+
+ const keepLast = str => {
+     return str.slice(str.length-2, str.length)
+ }
+
+ const keepFirstLast = str => {
+     return str.slice(3, 5)
+ }
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.deepStrictEqual(keepFirst("Hellocoucou"), "He")
+assert.deepStrictEqual(keepLast("Hellocoucou"), "ou")
+assert.deepStrictEqual(keepFirstLast("Hellocoucou"), "lo")
 // End of tests */
