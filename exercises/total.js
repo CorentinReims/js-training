@@ -6,6 +6,13 @@
  *
  */
 
+ const total = arrayOfNumber => {
+     let totalSum = 0
+     for (let i = 0; i < arrayOfNumber.length; i++){
+        totalSum += arrayOfNumber[i]
+     }
+     return totalSum
+ }
 
 //* Begin of tests
 const assert = require('assert')
